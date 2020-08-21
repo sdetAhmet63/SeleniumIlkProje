@@ -24,15 +24,12 @@ public class Day04_LoatorsGiris {
         WebElement signInButonu = driver.findElement(By.name("commit"));
         signInButonu.click();
 
-
-
-
-
-
-
-
-
-
+        String sayfaTitle= driver.getTitle();
+        if (sayfaTitle.equals("Address Book")){
+            System.out.println("islem basarili");
+        }else {
+            System.out.println("islem basarisiz");
+        }
 
     }
 }
